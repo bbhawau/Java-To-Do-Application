@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+id buttonAddTask
+id buttonDelete
+id buttonUpdate
+id checkBoxPriority
+id checkBoxUpdatePriority
+id editTextDescription
+id editTextPriority
+id editTextTitle
+id editTextUpdateDescription
+id editTextUpdatePriority
+id editTextUpdateTitle
+id taskDescription
+id taskListView
+id taskTitle
+layout activity_main
+layout dialog_update_task
+layout task_item
+string app_name
+style Theme.ToDoApp

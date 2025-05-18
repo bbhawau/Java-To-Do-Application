@@ -5,7 +5,14 @@ public class TaskDeleteHandler {
     public boolean deleteTask(Task task) {
         if (task == null) return false;
 
-        TaskManager.getInstance().deleteTask(task);
-        return true;
+        TaskManager manager = TaskManager.getInstance();
+        boolean existed = manager.getAllTasks().contains(task);
+
+        if (existed) {
+            manager.deleteTask(task);
+            return true;
+        }
+
+        return false;
     }
 }

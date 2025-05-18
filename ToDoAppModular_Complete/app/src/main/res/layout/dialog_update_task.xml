@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextUpdateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title" />
+
+    <EditText
+        android:id="@+id/editTextUpdateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUpdatePriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as high priority"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdatePriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priority"
+        android:inputType="number"
+        android:layout_marginTop="4dp"
+        android:enabled="false" />
+
+</LinearLayout>

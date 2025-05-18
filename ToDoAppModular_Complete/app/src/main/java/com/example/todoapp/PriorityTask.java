@@ -8,16 +8,16 @@ public class PriorityTask extends Task {
         this.priorityLevel = priorityLevel;
     }
 
+    @Override
+    public String getTaskType() {
+        return "Priority";
+    }
+
     public int getPriorityLevel() {
         return priorityLevel;
     }
 
     public void setPriorityLevel(int priorityLevel) {
         this.priorityLevel = priorityLevel;
-    }
-
-    @Override
-    public String getTaskType() {
-        return "Priority";
     }
 }
