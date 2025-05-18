@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.example.todoapp'
     compileSdk 34
 
     defaultConfig {
@@ -20,11 +21,13 @@ android {
         }
     }
 
-    namespace 'com.example.todoapp'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
 }
