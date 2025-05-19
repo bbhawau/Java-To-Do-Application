@@ -143,4 +143,13 @@ public class MainActivity extends AppCompatActivity
         builder.setNegativeButton("Cancel", (d, which) -> d.dismiss());
         builder.show();
     }
+    public void onToggleComplete(Task task) {
+        task.setCompleted(!task.isCompleted());         // flip state
+        taskAdapter.notifyDataSetChanged();
+        Toast.makeText(
+                this,
+                task.isCompleted() ? "Marked complete" : "Marked incomplete",
+                Toast.LENGTH_SHORT
+        ).show();
+    }
 }

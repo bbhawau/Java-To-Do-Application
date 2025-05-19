@@ -3,39 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@android:color/white">
 
     <EditText
         android:id="@+id/editTextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Task Title" />
+        android:hint="Task Title"
+        android:textColor="@android:color/black"
+        android:textColorHint="#80000000"/>
 
     <EditText
         android:id="@+id/editTextDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Task Description" />
+        android:hint="Task Description"
+        android:textColor="@android:color/black"
+        android:textColorHint="#80000000"/>
 
     <!-- Priority input expects an integer -->
     <EditText
         android:id="@+id/editTextPriority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Priority (enter a number, e.g., 1)" />
+        android:hint="Priority (enter a number, e.g., 1)"
+        android:textColor="@android:color/black"
+        android:textColorHint="#80000000"/>
 
     <CheckBox
         android:id="@+id/checkBoxPriority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mark as high priority" />
+        android:text="Mark as high priority"
+        android:textColor="@android:color/black"/>
 
     <Button
         android:id="@+id/buttonAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Task"
-        android:onClick="onAddTask" />
+        android:onClick="onAddTask"
+        android:backgroundTint="#000000"
+        android:textColor="@android:color/white"/>
 
     <ListView
         android:id="@+id/taskListView"

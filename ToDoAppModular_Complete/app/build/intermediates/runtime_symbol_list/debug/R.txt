@@ -3068,6 +3068,7 @@ int drawable notification_template_icon_bg 0x7f0700d5
 int drawable notification_template_icon_low_bg 0x7f0700d6
 int drawable notification_tile_bg 0x7f0700d7
 int drawable notify_panel_notification_icon_bg 0x7f0700d8
+int drawable task_border 0x7f0700dc
 int drawable test_level_drawable 0x7f0700d9
 int drawable tooltip_frame_dark 0x7f0700da
 int drawable tooltip_frame_light 0x7f0700db
@@ -3172,6 +3173,7 @@ int id bounceStart 0x7f080061
 int id buttonAddTask 0x7f080062
 int id buttonDelete 0x7f0801f6
 int id buttonPanel 0x7f080063
+int id buttonToggleComplete 0x7f0801fc
 int id buttonUpdate 0x7f0801f7
 int id cache_measures 0x7f080064
 int id callMeasure 0x7f080065

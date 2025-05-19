@@ -4,12 +4,16 @@
         "source": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-main-33:\\layout\\task_item.xml"
     },
     {
-        "merged": "com.example.todoapp-merged_res-31:/layout_task_item.xml.flat",
-        "source": "com.example.todoapp-main-33:/layout/task_item.xml"
+        "merged": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-merged_res-31:\\drawable_task_border.xml.flat",
+        "source": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-main-33:\\drawable\\task_border.xml"
     },
     {
-        "merged": "com.example.todoapp-merged_res-31:/layout_dialog_update_task.xml.flat",
-        "source": "com.example.todoapp-main-33:/layout/dialog_update_task.xml"
+        "merged": "com.example.todoapp-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.example.todoapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-merged_res-31:\\layout_dialog_update_task.xml.flat",
+        "source": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-main-33:\\layout\\dialog_update_task.xml"
     },
     {
         "merged": "C:\\Users\\tamsy\\.gradle\\daemon\\8.9\\com.example.todoapp-merged_res-31:\\layout_activity_main.xml.flat",

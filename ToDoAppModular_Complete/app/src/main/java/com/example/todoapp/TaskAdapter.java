@@ -12,6 +12,7 @@ public class TaskAdapter extends BaseAdapter {
     private OnTaskActionListener listener;
 
     public interface OnTaskActionListener {
+        void onToggleComplete(Task task);
         void onDeleteTask(Task task);
         void onUpdateTask(int position, Task task);
     }
@@ -20,6 +21,12 @@ public class TaskAdapter extends BaseAdapter {
         this.context = context;
         this.taskList = tasks;
         this.listener = listener;
+    }
+    static class ViewHolder {
+        TextView title, description;
+        Button toggleCompleteButton;
+        Button deleteButton;
+        Button updateButton;
     }
 
     @Override
@@ -37,12 +44,6 @@ public class TaskAdapter extends BaseAdapter {
         return i;
     }
 
-    static class ViewHolder {
-        TextView title;
-        TextView description;
-        Button deleteButton;
-        Button updateButton;
-    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -56,6 +57,7 @@ public class TaskAdapter extends BaseAdapter {
             holder.description = convertView.findViewById(R.id.taskDescription);
             holder.deleteButton = convertView.findViewById(R.id.buttonDelete);
             holder.updateButton = convertView.findViewById(R.id.buttonUpdate);
+            holder.toggleCompleteButton = convertView.findViewById(R.id.buttonToggleComplete);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -81,6 +83,15 @@ public class TaskAdapter extends BaseAdapter {
         holder.updateButton.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onUpdateTask(position, task);
+            }
+        });
+        holder.toggleCompleteButton = convertView.findViewById(R.id.buttonToggleComplete);
+        // Optional: fade completed tasks
+        convertView.setAlpha(task.isCompleted() ? 0.5f : 1f);
+
+        holder.toggleCompleteButton.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onToggleComplete(task);
             }
         });
 

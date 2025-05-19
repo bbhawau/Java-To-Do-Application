@@ -1,13 +1,26 @@
 package com.example.todoapp;
 
 public abstract class Task {
-    protected String title;
-    protected String description;
 
-    public Task(String title, String description) {
-        this.title = title;
-        this.description = description;
-    }
+        protected String title;
+        protected String description;
+        private boolean completed;  // NEW
+
+        public Task(String title, String description) {
+            this.title = title;
+            this.description = description;
+            this.completed = false; // default false
+        }
+
+        public boolean isCompleted() {
+            return completed;
+        }
+
+        public void setCompleted(boolean completed) {
+            this.completed = completed;
+        }
+
+        // ... existing getters/setters ...
 
     public abstract String getTaskType();
 
